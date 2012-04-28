@@ -54,8 +54,8 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/codahale/metrics.git</connection>
-        <developerConnection>scm:git:git@github.com:codahale/metrics.git</developerConnection>
+        <connection>scm:git:git@github.com:berngp/metrics.git</connection>
+        <developerConnection>scm:git:git@github.com:berngp/metrics.git</developerConnection>
         <url>http://github.com/codahale/metrics/</url>
     </scm>
 
@@ -66,19 +66,15 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>ign-nexus-snapshots</id>
+            <name>IGN Private Snapshots</name>
+            <url>http://maven.ign.com/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Nexus Release Repository</name>
-            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>ign-nexus</id>
+            <name>IGN Public Releases</name>
+            <url>http://maven.ign.com/nexus/content/repositories/releases</url>
         </repository>
-        <site>
-            <id>repo.codahale.com</id>
-            <url>scp://codahale.com/home/codahale/metrics.codahale.com/maven/</url>
-        </site>
     </distributionManagement>
 
     <dependencies>
